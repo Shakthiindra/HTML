@@ -1,0 +1,32 @@
+* {
+    background-color: antiquewhite;
+}
+
+p {
+    color: chocolate;
+}
+
+.heading {
+    color: cornflowerblue;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: magenta;
+    background-color: azure;
+}
+
+.sub-heading {
+    background-color: cadetblue;
+}
+
+#tagline {
+    color: crimson;
+    font-family: cursive;
+    background-color: cornsilk;
+}
+
+#poem {
+    color: blanchedalmond;
+    background-color: rgb(105, 105, 123);
+}
