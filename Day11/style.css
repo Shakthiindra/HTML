@@ -1,0 +1,213 @@
+/* CSS RESET & GLOBAL BOX-SIZING */
+* {
+    /* 1. Box Model: Applying global box-sizing */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* 3. Background Properties: Using Shorthand property */
+    background: url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ro7jYBQbZRRtk-nQKSEq9tNfkiGKuVzKZ-dxb55vVqtLUEtHqYZT431LlfzO2r0YbEeVJOx2puo1pm4tEe4XwswVQ6MbjnP3xOGSjuYJJPBpYPcU6V6wx2Jldb7dHCpgsp36U=s1360-w1360-h1020-rw) center/cover no-repeat fixed;
+    
+    /* Fallback & individual background property demonstrations: */
+    background-color: darkslategrey; /* Color Name */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+
+/* HEADER SECTION */
+.header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+
+    /* Border style: Dashed with border-radius */
+    border: 3px dashed #6f42c1;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 100%); /* HSL Color */
+}
+
+.header h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    /* 2. Color Properties: Color name & HEX */
+    color: midnightblue; 
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 20px;
+    font-style: italic;
+    /* 2. Color Properties: RGB */
+    color: rgb(111, 66, 193);
+    font-weight: 600;
+}
+
+/* CONTENT LAYOUT (TWO COLUMNS) */
+.main-content {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f8f9fa;
+}
+
+/* LEFT CARD: EVENT DETAILS */
+.details-card {
+    /* 1. Box Model: Solid border with Radius */
+    border: 2.5px solid #0056b3;
+    background-color: aliceblue;
+}
+
+.details-header {
+    /* 2. Color Properties: HSL background & white text */
+    background-color: hsl(211, 100%, 25%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-item span.icon {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.info-item .label {
+    color: navy; /* Color Name */
+    width: 80px;
+}
+
+.info-item .value {
+    color: #333333; /* HEX */
+}
+
+.banner-quote {
+    margin-top: 25px;
+    padding: 12px;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(75, 0, 130); /* RGB: Indigo */
+    background-color: rgba(111, 66, 193, 0.1); /* RGBA */
+    border: 2px dashed #6f42c1;
+    border-radius: 12px;
+}
+
+/* RIGHT CARD: EVENT HIGHLIGHTS */
+.highlights-card {
+    /* 1. Box Model: Double border style */
+    border: 3px dashed #1e7e34;
+    background-color: lemonchiffon;
+}
+
+.highlights-header {
+    background-color: #1e7e34; /* Green */
+    color: hsl(0, 0%, 100%);     /* HSL: White */
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.highlights-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.highlights-list li {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #212529;
+    display: flex;
+    align-items: center;
+}
+
+.highlights-list li::before {
+    content: "●";
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.highlights-list li:nth-child(1)::before { color: dodgerblue; }
+.highlights-list li:nth-child(2)::before { color: forestgreen; }
+.highlights-list li:nth-child(3)::before { color: limegreen; }
+.highlights-list li:nth-child(4)::before { color: orange; }
+
+.trophy-box {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+/* FOOTER / CALL TO ACTION BANNER */
+.cta-banner {
+    background: linear-gradient(90deg, #4b0082, #ff8c00); /* Gradient with colors */
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 15px;
+    border: 2px dashed #ffffff; /* Ridge Border Style */
+}
+
+.cta-banner h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.cta-banner p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.date {
+    color: #0056b3;
+    width: 80px;
+}
+
+.time {
+    color: #1e7e34;
+    width: 80px;
+}
+.venue {
+    color: crimson;
+    width: 80px;
+}
+
+
+
