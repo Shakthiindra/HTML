@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNkdlKRHNrZdu4hqyFFJWpdTofWDbp1GHQ3okhbUl-3Q&s=10"
+        alt="logo"
+        class="logo"
+      />
+
+      <div class="title-box">
+        <h1>Pragati Tech College</h1>
+        <p>Learn | Grow | Achieve</p>
+        <!-- <p class="tagline">Build Your Bright Future</p> -->
+      </div>
+    </header>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#registration">Registration</a>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Student Registration</h2>
+          <h2>& Profile</h2>
+          <p>Your Journey Towards a Better Future Starts Here...</p>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-text">
+          <h2 class="section-title">About Us</h2>
+          <p>
+            Dream Tech College is a premier educational institution dedicated to
+            providing <b>quality education</b> and building skilled
+            professionals for a <b>smarter tomorrow</b>.
+          </p>
+          <a href="#" class="btn-blue">Learn More</a>
+        </div>
+        <img src="https://miro.medium.com/v2/resize:fit:1200/1*S81O15rjKfG-BFdnNC6-GQ.jpeg" alt="" height="250px" width="550px" />
+      </section>
+
+      <section class="courses" id="courses">
+        <div class="courses-list">
+          <h2 class="section-title">Our Courses</h2>
+          <ul>
+            <li>Computer Science & Engineering</li>
+            <li>Electronics & Communication Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Information Technology</li>
+          </ul>
+        </div>
+
+        <div class="courses-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VzhjoIroqxw?si=K_LJEFHL4MJ8NKk_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="about" class="headings">
+        <h1>Heading Level 1</h1>
+        <h2>Heading Level 2</h2>
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+        <h5>Heading Level 5</h5>
+        <h6>Heading Level 6</h6>
+        <br />
+        <p>
+          Lorem ipsum dolor sit, <i>amet consectetur</i> adipisicing elit.
+          <b>Adipisci voluptate</b> odit et in harum ad incidunt veniam corporis
+          at dignissimos!
+        </p>
+
+        <br />
+        <pre>
+        "Hello, Welcome
+        to Hyderabad !"
+      </pre
+        >
+      </section>
+      <br />
+      <hr />
+      <br />
+
+      <section id="table" class="tables">
+        <h2>Student Information Table</h2>
+        <br />
+        <table class="student-table" border="1">
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Student Name</th>
+              <th>Course</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Raju</td>
+              <td>Python</td>
+              <td>92</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>Priya</td>
+              <td>Java</td>
+              <td>88</td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>Meena</td>
+              <td>Data Science</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>104</td>
+              <td>Ramu</td>
+              <td>Python</td>
+              <td>95</td>
+            </tr>
+            <tr>
+              <td>105</td>
+              <td>Karthik</td>
+              <td>Java</td>
+              <td>81</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <br />
+      <hr />
+      <br />
+      <section id="registration" class="form">
+        <h2>Student Registration Form</h2>
+        <br />
+        <form class="reg-form" action="#" method="post">
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" required />
+          <br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" required />
+
+          <br /><br />
+          <label for="gender">Gender:</label><br /><br />
+          <input type="radio" id="male" name="gender" value="Male" required />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="Other" />
+          <label for="other">Other</label>
+          <br /><br />
+
+          <label for="course">Course Selection:</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select a Course --</option>
+            <option value="python">Python Full Stack</option>
+            <option value="java">Java Full Stack</option>
+            <option value="data-science">Data Science</option>
+          </select>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <br />
+      <hr />
+      <br />
+      <section id="about" class="box">
+        <div class="floats">
+          <div class="float-left">Float Left Box</div>
+          <div class="float-right">Float Right Box</div>
+        </div>
+
+        <div class="clears">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam,
+            fugiat.
+          </p>
+        </div>
+
+        <div class="box-model">CSS Box Model : Padding, Border, and Margin</div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Pragati Tech College. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
